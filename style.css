@@ -1,38 +1,85 @@
-body
-h1{color: #f229b7;
+h1{
+  color: #f229b7;
   font-size: 50px;
   margin: 10px; margin-bottom: 5px;
    font-family: 'Arvo', serif;
    text-align: center;
  }
-h2 {color: #black;
-   font-size: 35px;
+h2 {
+  color: black;
+   font-size: 40px;
     margin: 10px;
-    font-family: 'Arvo', serif
-  }
-h3 {color: blue;
+    font-family: 'Arvo', serif;
+    text-align: left;
+}
+h3 {
+  color: black;
+  font-size: 25px;
+   margin: 10px;
+   font-family: 'Arvo', serif;
+   text-align: left;
+ }
+h4 {
+  color: blue;
    font-size: 20px;
     margin: 10px;
-     font-family: 'Arvo', serif
+     font-family: 'Arvo', serif;
+     text-align: left;
    }
+
 a:link {
     text-decoration: none;
     color: blue;
     font-size: 20px;
     margin-left: 10px; margin-right: 10px;
     font-family: Georgia;
+    text-align: left;
   }
   p {color: black;
   font-size: 20px;
   margin: 20px; margin-top: 5px; margin-left: 30px;
   font-family: Georgia;
   text-align: center;
-    }
-    .ettan_puffen {background-color: #fbbfda;
-  border: 20px;
-border-color: #fbbfda;
-border-style: solid;
 }
-.toppdelen {background-color: #c7f1fc;
+
+.ettan_puffen {
+  background-color: #fbbfda;
+  border-color: #fbbfda;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+}
+
+.center  {
+text-align: center;
+}
+
+.toppdelen {
+  background-color: #c7f1fc;
   border: 70px;
+}
+
+.puffen {
+  /*flexbox*/
+   display: flex;
+   align-items: top;
+   justify-content: center;
+ }
+
+.puffen img {
+   width: 50%;
+   margin: 20px;
+}
+.text-box {
+   width: 50%;
+   margin: 20px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.right img {width: 100%;
+  height: auto;
+
 }
