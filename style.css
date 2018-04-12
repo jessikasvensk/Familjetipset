@@ -22,10 +22,14 @@ h3 {
 h4 {
   color: blue;
    font-size: 20px;
-    margin: 10px;
+    margin: 5px;
      font-family: 'Arvo', serif;
      text-align: left;
    }
+   h5 {
+       margin: 5px;
+       margin-bottom: 2px;
+      }
 
 a:link {
     text-decoration: none;
@@ -45,9 +49,19 @@ padding: 10px;
 
 }
 
+.vinjett {
+  color: black;
+   font-size: 30px;
+    margin: 2px;
+    margin-bottom: 2px
+     font-family: 'Arvo', serif;
+     font-variant: small-caps;
+     text-align: left;
+   }
+
 .ettan_puffen {
-  background-color: #fbbfda;
-  border-color: #fbbfda;
+  background-color: #fee1fc;
+  border-color: #fee1fc;
   border-style: solid;
   justify-content: center;
 }
@@ -85,6 +99,11 @@ text-align: center;
 }
 .right img { width: 100%;
   height: auto;
+
+}
+
+.artikel-box {
+  margin: 5px;
 
 }
 @media (max-width: 600px) {
@@ -126,10 +145,38 @@ text-align: center;
             display: flex;
             justify-content: center;
             margin: 5px;
+            margin-bottom: 10px;
           }
           .right img { width: 100%;
             height: auto;
             margin: 5px;
-
+              margin-bottom: 10px;
           }
+          h1{
+            color: white;
+            font-size: 40px;
+            margin: 5px; margin-bottom: 5px;
+             font-family: 'Arvo', serif;
+             text-align: center;
+           }
+           p {color: black;
+           font-size: 15px;
+           margin: 5px; margin-top: 5px; margin-left: 30px;
+           font-family: Georgia;
+           text-align: center;
+         margin-bottom: 0px;
+         padding: 10px;
+
+         }
+
+         .vinjett {
+           color: black;
+            font-size: 20px;
+             margin: 2px;
+             margin-bottom: 2px
+             margin-top: 5px;
+              font-family: 'Arvo', serif;
+              font-variant: small-caps;
+              text-align: left;
+            }
 }
