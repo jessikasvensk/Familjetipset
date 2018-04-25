@@ -8,6 +8,12 @@
     <title>Familjetipset.nu</title>
     <style>
     </style>
+    <script>
+    const myFunction = () => {
+      document.querySelector(".artikel-box").classList.toggle("hideDIV");
+      document.querySelector(".knapp").innerHTML = "Dölj fler nyheter";
+    }
+    </script>
   </head>
   <body>
     <div class="toppdelen">
@@ -15,6 +21,7 @@
     <h1>Familjetipset.nu</h1>
     <p>En sida för dig som har små barn.</p>
   </div>
+
 <div class="ettan_puffen">
   <div class="center">
     <h2>Curlade barn kan få det svårt längre fram</h2>
@@ -22,7 +29,6 @@
     <img width="100%" height="auto" src="https://files.cafe.se/uploads/fly-images/96073/skrikande-barn-900x473-c.jpg">
     <p><a href="https://www.dn.se">Så sätter du gränser.</a></p>
   </div>
-
 </div>
 
 <div class="puffen">
@@ -45,8 +51,9 @@
   <div class="vinjett">
    <h5>fler nyheter</h5>
 </div>
+<button class="knapp" onclick="myFunction()">Visa fler nyheter</button>
 
-<div class="artikel-box">
+<div class="artikel-box hideDIV">
   <a href="https://www.dn.se"><h4>Guide: Första året med barn </h4> </a>
   <a href="https://www.dn.se"><h4>Han vågar skämta om svårigheten med att få barn </h4> </a>
   <a href="https://www.dn.se"><h4>Bebisdoft kan vara lugnande </h4> </a>
