@@ -5,7 +5,9 @@ const url = `https://newsapi.org/v2/everything?sources=cnn,bbc-news&q=lifestyle&
 
 const recievedNews = (newsdata) => {
     const articlesDiv = document.querySelector(".ettan_puffen")
-    newsdata.articles.forEach((article) => {
+    newsdata.articles.forEach((article,index) => {
+
+      if(index<1){
 
 			//Here we create and add html elements to our html file
       const div = document.createElement("div")
@@ -27,7 +29,7 @@ const recievedNews = (newsdata) => {
 					link.href = article.url
 					link.innerHTML = article.description
 					div.appendChild(link)
-
+}
     })
 }
 
