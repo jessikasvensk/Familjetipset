@@ -1,7 +1,6 @@
 const key = "6822cbd7354f4536aac2c62b869663fd"
 
-/* Example url: https://newsapi.org/v2/top-headlines?q=bitcoin */
-const url = `https://newsapi.org/v2/everything?sources=cnn,bbc-news&q=lifestyle&apiKey=${key}`
+let url = `https://newsapi.org/v2/everything?sources=cnn,bbc-news&q=lifestyle&apiKey=${key}`
 
 const recievedNews = (newsdata) => {
     const articlesDiv = document.querySelector(".ettan_puffen")

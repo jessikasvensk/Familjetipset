@@ -18,6 +18,7 @@ h3 {
    margin: 10px;
    font-family: 'Arvo', serif;
    text-align: left;
+
  }
 h4 {
   color: blue;
@@ -90,11 +91,13 @@ text-align: center;
    display: flex;
    align-items: top;
    justify-content: center;
+flex-wrap: wrap;
  }
 
 .puffen img {
-   width: 50%;
-   margin: 20px;
+   width: 100%;
+   margin: 2px;
+
 }
 
 .knapp {
