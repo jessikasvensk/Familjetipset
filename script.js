@@ -42,5 +42,5 @@ fetch(url)
 
   const myFunction = () => {
     document.querySelector(".artikel-box").classList.toggle("hideDIV");
-    document.querySelector(".knapp").innerHTML = "Dölj fler nyheter";
+    document.querySelector(".knapp").innerHTML = "Hide more news";
   }
