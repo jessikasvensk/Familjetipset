@@ -4,17 +4,15 @@ const key = "6822cbd7354f4536aac2c62b869663fd"
 const url = `https://newsapi.org/v2/everything?sources=cnn,bbc-news&q=lifestyle&apiKey=${key}`
 
 const recievedNews = (newsdata) => {
-    const articlesDiv = document.querySelector(".articles")
+    const articlesDiv = document.querySelector(".ettan_puffen")
     newsdata.articles.forEach((article) => {
 
 			//Here we create and add html elements to our html file
       const div = document.createElement("div")
-      div.className = "news"
+      div.className = "center"
 
 
-			div.innerHTML = `<h2>${article.title}</h2>
-											<hr>
-											`
+			div.innerHTML = `<h2>${article.title}</h2>`
 
       articlesDiv.appendChild(div)
 
@@ -40,3 +38,8 @@ const recievedNews = (newsdata) => {
 fetch(url)
   .then(response => response.json())
   .then(recievedNews)
+
+  const myFunction = () => {
+    document.querySelector(".artikel-box").classList.toggle("hideDIV");
+    document.querySelector(".knapp").innerHTML = "Dölj fler nyheter";
+  }
